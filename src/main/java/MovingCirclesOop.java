@@ -2,13 +2,13 @@ import processing.core.PApplet;
 
 public class MovingCirclesOop extends PApplet {
 
-    ScreenSize screenSize = new ScreenSize(640, 480);
+    ScreenSize screenSize = new ScreenSize(720, 640);
     Circle circle1, circle2, circle3, circle4;
 
-    public static int heightOfCircle1;
-    public static int heightOfCircle2;
-    public static int heightOfCircle3;
-    public static int heightOfCircle4;
+    public static int yCenter1;
+    public static int yCenter2;
+    public static int yCenter3;
+    public static int yCenter4;
     public static final int speedOfCircle1 = 1;
     public static final int speedOfCircle2 = 2;
     public static final int speedOfCircle3 = 3;
@@ -27,16 +27,16 @@ public class MovingCirclesOop extends PApplet {
         RandomColor bgColor = new RandomColor(0, 0, 0);
         background(bgColor.getRed(), bgColor.getBlue(), bgColor.getGreen());
 
-        heightOfCircle1 = screenSize.getHEIGHT()/5;
-        heightOfCircle2 = screenSize.getHEIGHT() * 2 / 5;
-        heightOfCircle3 = screenSize.getHEIGHT() * 3 / 5;
-        heightOfCircle4 = screenSize.getHEIGHT() * 4 / 5;
+        yCenter1 = screenSize.getHEIGHT()/5;
+        yCenter2 = screenSize.getHEIGHT() * 2 / 5;
+        yCenter3 = screenSize.getHEIGHT() * 3 / 5;
+        yCenter4 = screenSize.getHEIGHT() * 4 / 5;
 
 
-        circle1 = new Circle(0, heightOfCircle1, diameter, speedOfCircle1, 0);
-        circle2 = new Circle(0, heightOfCircle2, diameter, speedOfCircle2, 0);
-        circle3 = new Circle(0, heightOfCircle3, diameter, speedOfCircle3, 0);
-        circle4 = new Circle(0, heightOfCircle4, diameter, speedOfCircle4, 0);
+        circle1 = new Circle(0, yCenter1, diameter, speedOfCircle1, 0);
+        circle2 = new Circle(0, yCenter2, diameter, speedOfCircle2, 0);
+        circle3 = new Circle(0, yCenter3, diameter, speedOfCircle3, 0);
+        circle4 = new Circle(0, yCenter4, diameter, speedOfCircle4, 0);
 
     }
 
