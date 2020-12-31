@@ -26,6 +26,11 @@ public class Circle {
         this.yCenter = this.yCenter + yIncrement;
     }
 
+    public void updateCenterCoordinates(int x, int y){
+        this.xCenter = x;
+        this.yCenter = y;
+    }
+
     public void setDiameter(int diameter) {
         this.diameter = diameter;
     }
